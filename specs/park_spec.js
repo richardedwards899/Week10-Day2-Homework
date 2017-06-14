@@ -58,8 +58,8 @@ describe('Park test', function () {
 
     var prolificDinos = park.findDinosWithOffspringGreaterThan(2);
     assert.strictEqual(2, prolificDinos.length);
-    assert.strictEqual(prolificDinos[0].type==='velociraptor');
-    assert.strictEqual(prolificDinos[1].type==='triceratops');
+    assert.strictEqual(true, prolificDinos[0].type==='velociraptor');
+    assert.strictEqual(true, prolificDinos[1].type==='triceratops');
   });
 
 });

@@ -27,7 +27,7 @@ Park.prototype = {
   findDinosWithOffspringGreaterThan: function (number) {
     var prolifics = [];
     for (var i = 0; i < this.enclosure.length; i++) {
-      if (this.enclosure0[i].offspring > number){
+      if (this.enclosure[i].offspring > number){
         prolifics.push(this.enclosure[i]);
       }
     }
