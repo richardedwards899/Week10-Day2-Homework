@@ -16,12 +16,13 @@ Park.prototype = {
   },
 
   removeAll: function (name){
+    var freshEnclosure = [];
     for (var i = 0; i < this.enclosure.length; i++) {
-
-      if (this.enclosure[i].type === name) {
-        this.enclosure.splice(i,1);
+      if (this.enclosure[i].type != name){
+        freshEnclosure.push(this.enclosure[i]);
       }
     }
+    this.enclosure = freshEnclosure;
   },
 
   findDinosWithOffspringGreaterThan: function (number) {

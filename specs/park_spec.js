@@ -47,6 +47,7 @@ describe('Park test', function () {
 
   it('should remove all dinosaurs of a particular type', function () {
     park.add(dino1);
+    park.add(dino1);
     park.removeAll('tyrannosaurus');
     assert.strictEqual(0, park.enclosure.length);
   });
